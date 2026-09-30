@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".RegistroEstudiante">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Registro de Estudiante"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spnTD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtNumDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="none"
+            android:hint="Número Documento"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="Nombres"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="Apellidos"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="emailAddress"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="username"
+            android:hint="Usuario"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="newPassword"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/edtConfirmaClave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="newPassword"
+            android:hint="Confirme Contraseña"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="registraEstudiante"
+            android:text="Registrar" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="limpiaFormulario"
+            android:text="Limpiar" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="regresaMenuPpal"
+            android:text="Volver al Login" />
+
+    </LinearLayout>
+</ScrollView>

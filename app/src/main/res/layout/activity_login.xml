@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Iniciar Sesión"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtLoginUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/edtLoginClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="autenticar"
+        android:text="Ingresar" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="invocaRegistroEstudiante"
+        android:text="Registrarse" />
+
+</LinearLayout>
